@@ -1,8 +1,15 @@
 /* Tenth Point Vanilla CSS */
 :root {
+  --logo-green: #2e5935;
+  --logo-orange: #ec9834;
   --primary: #1e293b;
+  --primary: oklch(form var(--logo-green) calc(l-40) c h);
+  --primary: oklch(form var(--logo-green) calc(l-40) c h);
   --accent: #2563eb;
-  --success: #16a34a;
+  --success: oklch(from var(--logo-green) l c calc(h-20));
+  --success: oklch(from var(--logo-green) l c calc(h+20));
+  --success: oklch(from var(--logo-green) calc(l-100) c h);
+  --link-color: lch(from var(--logo-orange) calc(l - 20) c h);
   --bg: #f8fafc;
   --text: #334155;
 }
@@ -22,10 +29,30 @@ body {
   padding: 0 20px;
 }
 
+a:link, a:visited {
+  letter-spacing: 0.05em;
+  color: var(--link-color);
+}
+
 header {
   background-color: var(--primary);
   color: white;
   padding: 10px 0;
+
+  .logo {
+    display: block;
+    height: 100px;
+    width: 50%;
+    text-decoration: none;
+  }
+  h1 {
+    background-image: url(/images/logo-trans.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 50%;
+    color: transparent;
+  }
 }
 
 header .container {
