@@ -55,6 +55,14 @@ header {
   }
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
+p {
+  /*max-width: 60ch;*/
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -90,6 +98,12 @@ nav a:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+
+background-color: lightgrey;
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
