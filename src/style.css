@@ -1,112 +1,108 @@
 /* Tenth Point Vanilla CSS */
 :root {
-  --logo-green: #2e5935;
-  --logo-orange: #ec9834;
-  --primary: #1e293b;
-  --primary: oklch(form var(--logo-green) calc(l-40) c h);
-  --primary: oklch(form var(--logo-green) calc(l-40) c h);
-  --accent: #2563eb;
-  --success: oklch(from var(--logo-green) l c calc(h-20));
-  --success: oklch(from var(--logo-green) l c calc(h+20));
-  --success: oklch(from var(--logo-green) calc(l-100) c h);
-  --link-color: lch(from var(--logo-orange) calc(l - 20) c h);
-  --bg: #f8fafc;
-  --text: #334155;
+    --logo-green: #2e5935;
+    --logo-orange: #ec9834;
+    --primary: #1e293b;
+    --primary: oklch(form var(--logo-green) calc(l-40) c h);
+    --primary: oklch(form var(--logo-green) calc(l-40) c h);
+    --accent: #2563eb;
+    --success: oklch(from var(--logo-green) l c calc(h-20));
+    --success: oklch(from var(--logo-green) l c calc(h + 20));
+    --success: oklch(from var(--logo-green) calc(l-100) c h);
+    --link-color: lch(from var(--logo-orange) calc(l - 20) c h);
+    --bg: #f8fafc;
+    --text: #334155;
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+    margin: 0 auto;
 }
 
 a:link, a:visited {
-  letter-spacing: 0.05em;
-  color: var(--link-color);
+    letter-spacing: 0.05em;
+    color: var(--link-color);
 }
 
 header {
-  background-color: var(--primary);
-  color: white;
-  padding: 10px 0;
+    background-color: var(--primary);
+    color: white;
 
-  .logo {
-    display: block;
-    height: 100px;
-    width: 50%;
-    text-decoration: none;
-  }
-  h1 {
-    background-image: url(/images/logo-trans.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 50%;
-    color: transparent;
-  }
+    .logo {
+        display: block;
+        height: 100px;
+        width: min(365px, calc(100% - 20px));
+        text-decoration: none;
+    }
+
+    h1 {
+        background-image: url(/images/logo-trans.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100px;
+        color: transparent;
+        font-size: 10px;
+    }
+
+    .top-bottom-border {
+        margin-top: 20px;
+        padding-block: 10px;
+        background-color: var(--logo-green);
+        background: radial-gradient(circle, var(--logo-green) 450px, var(--bg) 600px);
+
+        a:link, a:visited {
+            color: white;
+        }
+    }
 }
 
 h1, h2, h3 {
-  text-align: center;
+    text-align: center;
 }
 
 p {
-  /*max-width: 60ch;*/
+    padding-left: 5px;
+    /*max-width: 60ch;*/
 }
 
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.status-card {
-  background: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  border-left: 5px solid var(--accent);
-  margin-top: 20px;
+.container.content {
+    max-width: 700px;
 }
 
-.badge {
-  background-color: var(--success);
-  color: white;
-  padding: 4px 12px;
-  border-radius: 9999px;
-  font-size: 0.85rem;
-  display: inline-block;
-}
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    width: 100%;
 
-
-background-color: lightgrey;
-  margin-top: 50px;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #64748b;
+    background-color: lightgrey;
+    background: radial-gradient(circle, lightgrey 450px, var(--bg) 600px);
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #64748b;
 }

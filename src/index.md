@@ -2,8 +2,16 @@
 layout: layout.html
 title: Welcome
 ---
-
-# Welcome to Tenth Point
+<div style="position: relative; width: 100%;">
+<img src="../images/IMG_2551.jpeg" alt="Welcoming team out gardening" 
+style="width: 100%" />
+<h1 style="position: absolute; bottom: 0px; width: 100%; text-align: center; color: white; 
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; font-size: clamp(1em, 8vw,3em); ">Welcome to Tenth Point</h1>
+</div>
 
 Tenth Point is a community garden nonprofit in West Oakland. Our first location is at 1009 Chester Street, where we are
 beginning to build a presence and community in the neighborhood. We grow free fruits and vegetables year round. Stop by
