@@ -17,7 +17,7 @@ grow it while providing an opportunity to connect with the land and its history.
 need to continue the fight for food sovereignty.
 
 ## Future goals
-    <img src="/images/IMG_2551.jpeg" alt="Priita Peterson" width="200" >
+    <img src="/images/IMG_2551.jpeg" alt="Priita Peterson" height="200" >
 
 ## History
     <img src="/images/IMG_2565.jpeg" alt="Priita Peterson" width="200" height="200">
